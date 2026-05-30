@@ -11,6 +11,12 @@ use std::fmt;
 #[derive(Clone, Copy, PartialEq, Eq, Hash)]
 pub struct Uuid(pub [u8; 16]);
 
+impl Default for Uuid {
+    fn default() -> Self {
+        Self::new()
+    }
+}
+
 impl Uuid {
     pub fn new() -> Self {
         // Simple LCG-based pseudo-random for zero-dep UUIDs.
