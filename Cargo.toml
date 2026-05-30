@@ -1,0 +1,8 @@
+[package]
+name = "room-cell"
+version = "0.1.0"
+edition = "2021"
+description = "The fundamental room cell — standalone but composable atom of the Grand Pattern architecture"
+license = "MIT"
+
+[dependencies]
